@@ -6,14 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import android.support.v7.widget.Toolbar;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
     private Button button4;
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        toolbar = (Toolbar)  findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("ALC 4 Phase 1");
 
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {

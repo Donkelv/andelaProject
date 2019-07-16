@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".myProfile"></activity>
-        <activity android:name=".aboutAndela" />
+        <activity android:name=".myProfile" android:parentActivityName=".myProfile"></activity>
+        <activity android:name=".aboutAndela" android:parentActivityName=".aboutAndela" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
